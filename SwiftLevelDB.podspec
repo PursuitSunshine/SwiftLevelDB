@@ -8,14 +8,11 @@ Pod::Spec.new do |spec|
                    DESC
   spec.homepage     = "https://github.com/CoderYFL/SwiftLevelDB"
   spec.license      = "MIT"
-  spec.author             = { "Cherish" => "390151825@qq.com" }
-  spec.platform     = :ios
+  spec.author             = { "Cherish" => "" }
+  spec.dependency  'leveldb-library'
   spec.ios.deployment_target = "10.0"
   spec.swift_versions = ['4.0', '5.0']
   spec.source       = { :git => "https://github.com/CoderYFL/SwiftLevelDB.git", :tag => "1.0.0" }
   spec.source_files  = "SwiftLevelDB/LevelDB/*.{h,mm,swift}"
-  spec.requires_arc = true
-  spec.dependency 'leveldb-library'
   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/leveldb-library/include"}
- 
 end
