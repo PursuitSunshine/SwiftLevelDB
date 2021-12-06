@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
                    DESC
   spec.homepage     = "https://github.com/CoderYFL/LevelDB-Swift"
   spec.ios.deployment_target = "10.0"
-  spec.source       = { :git => "https://github.com/CoderYFL/SwiftLevelDB.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/CoderYFL/SwiftLevelDB.git", :tag => "1.1.0" }
   spec.author       = { 'Cherish' => 'pursuitsunshine@gmail.com' }
   spec.source_files  =  "SwiftLevelDB/src/*.{swift,h,cpp,hpp}"
   spec.requires_arc = true
