@@ -19,41 +19,39 @@ By far, the easiest way to integrate this library in your project is by using [C
 #### Open database
 
 ```Swift
- let ldb = LevelDB.open(db: "test.db")
+ let db = LevelDB.open(db: "test.db")
 ```
 
 #### Cache data
 
 ```Swift
-let intValue: Int = 10
-let cacheData = try? JSONEncoder().encode(intValue)
-ldb.put("Int", value: cacheData)
+db.putCodable(true, forKey: "bool")
 ```
 
 #### Get data
 
 ```Swift
-let getData = ldb.get("Int")
+let getData = db.getCodable(forKey: "bool", type: Bool.self) ?? false
 ```
 
 
 #### Delete data
 
 ```Swift
- ldb.delte("Int")
+ db.delte("bool")
 ```
 
 
 #### Keys
 
 ```Swift
- let keys: [Slice] = ldb.keys()
+ let keys: [Slice] = db.keys()
 ```
 
 #### Close database
 
 ```Swift 
- ldb.close()
+  db.close()
 ```
 
 

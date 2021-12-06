@@ -13,9 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .cyan
-        print("成功展示首页")
         let db = try! LevelDB.open(db: "Cherish")
-        print("成功打开数据库")
+        print("open dadabase")
         db.putCodable(true, forKey: "bool")
         print(db.getCodable(forKey: "bool", type: Bool.self) ?? false)
         let allKeys = db.keys()
