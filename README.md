@@ -38,7 +38,7 @@ let getData = db.getCodable(forKey: "bool", type: Bool.self) ?? false
 #### Delete data
 
 ```Swift
- db.delte("bool")
+ db.delete("bool")
 ```
 
 
