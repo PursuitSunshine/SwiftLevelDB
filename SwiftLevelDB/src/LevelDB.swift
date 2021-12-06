@@ -280,115 +280,18 @@ extension LevelDB {
     public func name() -> String {
         return dbName
     }
-    
-    
-    /// setObject OC KeyedArchiver
-    /// - Parameters:
-    ///   - object: 需要实现NSCoding 协议
-    ///   - key: key Slice
-    public func setObject(_ object: Any?, forKey key: Slice){
-        assert(db != nil, "Database reference is not existent (it has probably been closed)")
-        assert(key is String || key is Data, "key must be String type or Data type")
-        assert(object != nil, "Stored value cannot be empty")
-        assert(object is NSCoding, "value must implemented NSCoding protocol!")
-        assert(object is NSSecureCoding,"value must implemented NSSecureCoding protocol!")
-        
-        var data: Data?
-        if #available(iOS 11, *) {
-            data = try? NSKeyedArchiver.archivedData(withRootObject: object!, requiringSecureCoding: true)
-        } else {
-            data = NSKeyedArchiver.archivedData(withRootObject: object as Any)
-        }
-        put(key, value: data)
-    }
-    
-    
-    /// 同 setObject
-    /// - Parameters:
-    ///   - value: 需要实现NSCoding 协议
-    ///   - key: key Slice
-    public func setValue(_ value: Any?, forKey key: Slice){
-        setObject(value, forKey: key)
-    }
-    
-    
-    /// 同 object(forKey）
-    /// - Parameter key: key
-    /// - Returns:NSKeyedUnarchiver.unarchiveObject
-    public func value(forKey key: String) -> Any?{
-        return object(forKey: key)
-    }
-    
-    /// 获取结果
-    /// - Parameter key: key
-    /// - Returns:NSKeyedUnarchiver.unarchiveObject
-    public func object(forKey key: Slice) -> Any? {
-        guard let data = get(key) else {
-            return nil
-        }
-        return NSKeyedUnarchiver.unarchiveObject(with: data)
-    }
-    
-    
-    
-    /// 获取结果
-    /// - Returns: NSKeyedUnarchiver.unarchiveObject(ofClass,from)
-    public func object<T>(forKey key: Slice, cls: T.Type) -> Any? where T : NSObject, T : NSCoding {
-        guard let data = get(key) else {
-            return nil
-        }
-        if #available(iOS 11, *) {
-            return try? NSKeyedUnarchiver.unarchivedObject(ofClass: cls, from: data)
-        } else {
-            return NSKeyedUnarchiver.unarchiveObject(with: data)
-        }
-    }
-    
-    public func allKeys() -> [Slice] {
-        return keys()
-    }
-    
-    public func removeObject(forKey key: Slice) {
-        assert(db != nil, "Database reference is not existent (it has probably been closed)")
-        delete(key)
-    }
-    
-    public func removeObjects(forKeys keyArray: [Slice]) {
-        for (_, key) in keyArray.enumerated() {
-            removeObject(forKey: key)
-        }
-    }
-     
-    public func removeAllObjects() {
-        let keys = allKeys()
-        if keys.count > 0 {
-            for (_, item) in keys.enumerated() {
-                removeObject(forKey: item)
-            }
-        }
-    }
-    
+
     public func deleteDatabaseFromDisk() {
         if self.db != nil {
             close()
             try? FileManager.default.removeItem(atPath: self.dbPath)
         }
     }
-    
-    public func objectExists(forKey: Slice) -> Bool {
-        assert(db != nil, "Database reference is not existent (it has probably been closed)")
-        return get(forKey) != nil
-    }
-    
-    public func closed() -> Bool {
-        return db == nil
-    }
 }
 
 // MARK: Cache and get objects that implement the Codable protocol,Glue interface provided externally
-
 extension LevelDB {
-    /// iOS 13 Int 和 Bool 类型，JSONEncoder encode 失败， 报top-level Int encoded as number JSON fragment. 错误，这里包装一层
+    /// The following basic data in iOS 13 fails to directly call JSONEncoder encode and must be wrapped
     /// @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     /// extension JSONDecoder : TopLevelDecoder { }
     struct CoableBox<T: Codable>: Codable {
@@ -431,11 +334,6 @@ extension LevelDB {
         }
     }
     
-    
-    ///  iOS 13 中 Int 和 Bool 类型 会使用 CoableBox 包装
-    /// - Parameters:
-    ///   - value: 实现Codable协议
-    ///   - key: 实现Slice协议
     public func putCodable<T>(_ value: T?, forKey key: Slice) where T: Codable {
         if value == nil {
             put(key, value: nil)
