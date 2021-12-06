@@ -1,6 +1,0 @@
-framework module Pods_SwiftLevelDB_SwiftLevelDBUITests {
-  umbrella header "Pods-SwiftLevelDB-SwiftLevelDBUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
