@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F24289408806CFC1053EAF86FC8AE7 /* env.cc in Sources */ = {isa = PBXBuildFile; fileRef = 136C6C6B0CE8B5950B4212EF1D76F8ED /* env.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04F471295D9EFE5BABD7125E1C169B12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		05E12FF73E6AF3C3A04B81E2F9DBFAB4 /* dbformat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1D7B521F14B981CB447746506628C317 /* dbformat.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06E2ADD811A76863878A26932E4A8EC7 /* leveldb-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4A55FC88830E413DCE9183B3268CB /* leveldb-library-dummy.m */; };
+		107B86B05DE32BFFAFC1268B97482C7C /* coding.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CE8C5D981B497D9A660647D8F64CB /* coding.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		124693AB694E4857540D9E248D1C4AF3 /* env_posix_test_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = D10938B0D26789C6C98BE96867E5B6A6 /* env_posix_test_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12B74F90BDF222AA33AAC31D743DBFF5 /* leveldb-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 561A3C23FA9A9151FEC79DC110CF948C /* leveldb-library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13040DCDA8D0CAB096A083BC00342ADB /* version_edit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 00971B5E5C73590BA734BDD7953B906C /* version_edit.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		19C70D326BF7987D8EEE73296BF8D33B /* Pods-SwiftLevelDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8475DE1FECD587026B0930D7FFE97BA7 /* Pods-SwiftLevelDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19EC6E8CA8B87430D03F1D364F21227C /* port_stdcxx.h in Headers */ = {isa = PBXBuildFile; fileRef = 007649A893C3A14EF66CBDCE0C6710D7 /* port_stdcxx.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E6A4A4E614F2684DA7CCE66035CEBE2 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C6984B5E27387AF6B9238685664058 /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE4700C6D71370E22A6DB403FDE457F /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 23C7854C838237DA68C009D605247AFC /* arena.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		237E56CB7EF1D354B62B691B2E74EFCB /* table_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3BC62BE5857D1B4479F1373BCFD09AD8 /* table_builder.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		24D3C63B6101E0DB74306CCB812E654D /* memtable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EED18F7D2D500BAD7F4B8456416969E /* memtable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25BD344E97C9818225666669D265AE4C /* log_writer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A31472ADFF63C23A5A7A26C15DBF6E /* log_writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A2AFD034433BD2A35B92A1767CA3A92 /* port_example.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B439F5F81766907637999A776511663 /* port_example.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A44B628B1369A83A6990987B6F3FBD4 /* iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 22C5A5AE9707AEADD2A2189434D5A6A5 /* iterator.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30C3284F072F0D2C2B1CF72C52E7CA36 /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93C3E9682EA05B6BCA53562FAAF86F95 /* crc32c.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		31760C442FD20C53B130C752384D251D /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FF6477E327C353F89EC548411B88FE /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33912503AEC797E163DB60766FC69A12 /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 44D4686D3CCBEE892A8001EBB62BF8B9 /* comparator.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		33A7C77CF9C2F76C6A177D9AC0285A7E /* options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 40309A8568CAE0C8B3133B4FF2FDA4EB /* options.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		34DBFA190108871ECACB34F537BF8B68 /* block.cc in Sources */ = {isa = PBXBuildFile; fileRef = DE447C8958D4173E6D7DFC53BB712C16 /* block.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		364321DB224FCB2571CE1D513BD7F4D9 /* two_level_iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7DC32DBD2616F4DE5FF78B71E9E595 /* two_level_iterator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3661FB5135B1E5DEB2DC958DC68D2F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3737F9816E7A58B80552C78A3002C899 /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = E4F3262F3A2EFDAFCB42F3228E3421F1 /* histogram.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		373B8605F25BF068D1B868A10F10DF7F /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 754DFF8108A8A6895516B8F1ADEFB24F /* logging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A3526856AE7201FFE31F72AE0401E93 /* log_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = B79EA47ACD40C8F752D14F133CDF13BA /* log_reader.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F42BA66B606B7E1B2EF90CC1EA99CC8 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 1376DCE5C6BDC0170E0DC8FEC9A56EFB /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4430A593149131265CE11C2E50466854 /* comparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 64829A9C33051F80301F79C753C76001 /* comparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4529B6839A510BB3C26BA213DA47DD6A /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B86A2C034BC814EDAAE6BEABC1397E9 /* format.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		457BE871AB4AEC313DA165413C887121 /* db.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD93AAC5B9EFE07722CB7373060567E /* db.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4994E688D2DEDCB87C123753E428EEA3 /* mutexlock.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A337F1686DE9E30187367F3BF6DDE0 /* mutexlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4AF1327477D18D25A94325CF530983CB /* env_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8473D3962B2B63A2F9C258F9DA555EF5 /* env_posix.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BE58681F5427154573A32970ACA8FF1 /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 34B6C1D0DC0844987716F99F79B8D035 /* status.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CAEB74269772F58F8EB7C0CBF3DE190 /* snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 590883F6D1CEFC84FD4C4DDEFA3E9F26 /* snapshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50B262FA91C6AD9F44272C6127747310 /* dbformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCAEA12B4091AC157425952F1415919 /* dbformat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5572209F6FC8DF50059FF02840C2DB14 /* cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 84D235CA92A142169F6CF0207BB482C7 /* cache.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56A793B3AD3E6C9AC94E9508A18F6C01 /* format.cc in Sources */ = {isa = PBXBuildFile; fileRef = A057956C3DE2E3C4486414CD16F4D593 /* format.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5E4D723D35861DAAD1192043EA7E6973 /* filter_block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 746BDC088DB148D7A4A83A3A0A666B6C /* filter_block.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		611CDCE7CC0AA1C10F5BDFDBCE1FE188 /* db_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF19798A2F221C3FD869E4BB934B478 /* db_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		613B5EC4D56CFBD12EF38B0233324273 /* cache.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE72C80982D275508DD34446BDBB261 /* cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6174B71B3BEF70F4843C806F819BE485 /* bloom.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1AB60C0D48FA6F7F04891E1D394A82D8 /* bloom.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		626B9B8B8A4FE5F2DA828DE32BDBFC5A /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 10C3661E975B2EB2411E0D8CEA86D592 /* logging.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		63EA906EF6DCE9F404EA6E362A8BAD35 /* testharness.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0DFC27A52594163DEDAFE07F535E20 /* testharness.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65FF1F1E5408C9FF4343E7512E4FFA96 /* builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 927E696E639D43DB30162B51E9720BC9 /* builder.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		667491E66068756423C3540DF8FC64A1 /* filename.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E2F309C8BEBED8B684A8ACFC6C18BA /* filename.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		683A3F2664AE0B6C5D5DA8F1BAABAC49 /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = E01A90D76F1441ED869209248AF55A4A /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6DD7E60E098A42B58B0275FF22801928 /* filter_block.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7E1EF44823044F7CC2B387BBAAFD7B /* filter_block.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E9CCC3DB6E1F66C871F33076BCA67D5 /* builder.h in Headers */ = {isa = PBXBuildFile; fileRef = E549096BED9C288C10EC7AC2E3CCA991 /* builder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7214C028C0C248A39B521E42B1CA0D9F /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = A1208D9E1053A47B45EF57C8B78C97A8 /* port.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		768DA46B21BBD131F26542220DB415D0 /* posix_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A15EDF8FCB048BD13A22AFA7548C484 /* posix_logger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DFFCD5832B1FC7C8D8012D9F9B065B7 /* write_batch.cc in Sources */ = {isa = PBXBuildFile; fileRef = FE66CC9C900CDE41E9D40C324D7C3640 /* write_batch.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7F5043C66606A957135D4A8A019A67EC /* table.cc in Sources */ = {isa = PBXBuildFile; fileRef = B4ECDC0B1EAA31253D99DDD5E0E5A0FD /* table.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8334E6A626280CE9B25CC9A28FFA4BBA /* dumpfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = E3B3D55B55CB3E14A05C008310F69D09 /* dumpfile.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		83FDD26BEF6619D3FF00A886039064D0 /* log_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86D9C4B09A525AE1895D96F5B18C9B74 /* log_writer.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		859A4EE25CFB9E2929665E84207B8476 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = F27E896EA082759E1ECBECD10F935525 /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		885CB3DBE0C18C546B73E255EE298867 /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 126B090679A222E08E02EECC15FAE602 /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961D2A628A540DCF374ED832BC79B064 /* filter_policy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 500E82E26157E1A4F2F7B075B8A24220 /* filter_policy.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		971A40EEF4B6DA046AAE9B1AC89F1B77 /* crc32c.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2554373D75A42B29054167EE99F3F5 /* crc32c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98B838850574A279EB1F3ECC81319B7B /* memtable.cc in Sources */ = {isa = PBXBuildFile; fileRef = 819D92C839C6BF5A4BA2A0327BA2DDC0 /* memtable.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D06AE16049BBBEAEFA444D845EAAFB9 /* repair.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8154FDA44EC1198B13E5DEF740DEEA91 /* repair.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A0AE94E6EC32DA608431C010E4681791 /* status.h in Headers */ = {isa = PBXBuildFile; fileRef = 2059CA569D1A96892DB1C88E72F4384E /* status.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3C9A9C6B8220B7F5BAC06A19AC87E71 /* write_batch_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A879BC3CE00C5B1E97616C7CF415A16D /* write_batch_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3CAC9007DA68A2421DB1C6E4CFEE40E /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C815EB57438C71F06E17CBE7E8E245D /* hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5851DE95732DDBDCE82E03B4DDCB760 /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = 4141DA2D9E323B6CEE25278C39CC59DF /* block.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACFD1BCB733B8115502B96B61E964E23 /* two_level_iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 83827AC5CD2708D7151D812801677A2F /* two_level_iterator.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD02054E3A4E04984D2E6A3CEA6E9B35 /* filter_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0556C7838A01FD466E2E865E9E434106 /* filter_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B08B030FB81169BDD65D6391E0113C84 /* version_edit.h in Headers */ = {isa = PBXBuildFile; fileRef = 53505B783544105D75A30E14ED128AA0 /* version_edit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2BE19CB47F04F57DA0EBF4B789608BC /* filename.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD2A862411A9734E1A7A2B3892E1B90B /* filename.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B39B6B84524F668202ED7BECEB1CC2B4 /* block_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = D5E5D90BFD2CFD3311581A3FAEEA62B6 /* block_builder.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6A462AFD1921315FF4B939562435E9F /* testharness.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3D825425C21799E939618DE3AACCEAB9 /* testharness.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6F0224507A0089B4FFE7446582DD785 /* log_reader.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD678C4D8CB1D71A7184F2A98EFDBDB /* log_reader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B71F22350F6D831B0E4D9A7CC25D2F60 /* block_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 32AE011B0F69FE2381F51F6A8427C901 /* block_builder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD4C17923FCCE915A5AC6B2E36A27693 /* histogram.h in Headers */ = {isa = PBXBuildFile; fileRef = 11613B92FD78EB3E0E0FFB757611608B /* histogram.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF1E13750C078C86DBF7A0EE03031B1C /* table_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = A8330FE5312115DB9EF8B73D9BD2A3A8 /* table_cache.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BF8A795B6BA25405938C1A8AB8725905 /* coding.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B70A5D84B2BA32D988E762E85CCC5BA /* coding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C318B91F752B36CEB54C29D77BF0DD78 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB20BF2A58EA75D6DA9036A93BEA7C8 /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C444671DE961EECAF94D385A2E258797 /* env_windows_test_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 91DF2B5B7DD36E2457765EF2AEB34229 /* env_windows_test_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6B2F904989674EEDEE898EC453D7CF6 /* Pods-SwiftLevelDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB110B79E5937724931530BA951A1D7 /* Pods-SwiftLevelDB-dummy.m */; };
+		C6E02D01294FA360CBBF07C65E09E31E /* dumpfile.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C906318CF1265CD7BF376031435C78 /* dumpfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6F6B3BF8B1FF10A5C7DECE10BF5C838 /* version_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = F843899AD334551A3016A4F1A623E373 /* version_set.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC127C3950CBD05AD6406EC4C9D639C0 /* slice.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C16FAEC92DC078E84C3984DF399E3A /* slice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3699CF1EA8610CAE3D5E086F8618FB /* log_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD52F10A8561E0C0E21F54B7F3D4F57 /* log_format.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1DA50414F74358EC85AEE587B4DA153 /* skiplist.h in Headers */ = {isa = PBXBuildFile; fileRef = 958A48A1EC05946214EA5126D069F75F /* skiplist.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D750782F6872805919DAD942963BA59D /* db_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FD8F4DD96831E74C418B306FB902 /* db_impl.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DB6B8CB119FA547C63CE00A0ADD97D4E /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = A23D6BF813A05F1FFA01FA3E77859432 /* hash.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC37D273A423EDC5C4E26EAF59586199 /* no_destructor.h in Headers */ = {isa = PBXBuildFile; fileRef = AD778A261C58DD6BCB0BA122E282F3FB /* no_destructor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD5DA094509F9208B6BAE5293F22B06D /* table_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 776D91E04E7377FE54A9D817025F8BEE /* table_cache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE42FA1EDD5504837AC2B4FC517B62CF /* iterator_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2300E4605D67E96F407FD1AD5E2F688D /* iterator_wrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EA4CBAA22F39B5134C6AE06B5A88C4EC /* testutil.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDF10D5FEFA7D1150D7123F2D4B3665 /* testutil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDB6B354326FEE49345E36355A866994 /* windows_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D514522346E9C6E1CF5B258B995D9F /* windows_logger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFEF97B2237DFA0ED431C1E858B12486 /* merger.cc in Sources */ = {isa = PBXBuildFile; fileRef = E0A5800B4BF2152549C48268EE953C45 /* merger.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F339237A7F3E7C38161F92E200FF80DB /* table_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = B8AA9B7E9B2C8096D10632E86AEAC94D /* table_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F44BB80FA2396806D21736E0D903E055 /* merger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8957E3C2DD74FEB7A5EA51FE934033 /* merger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F72FFAF15E01A9D8C141441856D43BCA /* db_iter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 105C555A9CCE8287E66483A4E55987CB /* db_iter.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F855BA53066AE0FC6246833639D45E53 /* thread_annotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C837E2B80E997A1EF30EA263CAD037 /* thread_annotations.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F89BCD1E281B36A72110B7C5CD9C7B90 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = DC183833646E75916FCAF209BD02A3D3 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA889A6A88FFE1C18DEA0B83A97314A5 /* db_iter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92B3D35330140F0FA8971CC65A266E /* db_iter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC46C7EA0C86A10078BDCBC89CA99748 /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = EC0FCEAFB40BB3E9ADBE7E2E291CCB3E /* c.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD7EF74891BECB13D83E59D6ADB70D79 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C45245800D050DF09FFA6286707DCDC /* random.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE8D9A6E88E7A5FDD700AF495012F068 /* arena.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F3173E0CBE56EB0136D653F9CF4912 /* arena.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE4F58CC09772C198565E1033C658187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9307B7A119490930CF70393AB529AAC1;
+			remoteInfo = "leveldb-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007649A893C3A14EF66CBDCE0C6710D7 /* port_stdcxx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_stdcxx.h; path = port/port_stdcxx.h; sourceTree = "<group>"; };
+		00971B5E5C73590BA734BDD7953B906C /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
+		010EA1D4332BF6022453567193E255B3 /* Pods-SwiftLevelDB-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLevelDB-acknowledgements.plist"; sourceTree = "<group>"; };
+		01C837E2B80E997A1EF30EA263CAD037 /* thread_annotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thread_annotations.h; path = port/thread_annotations.h; sourceTree = "<group>"; };
+		0556C7838A01FD466E2E865E9E434106 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
+		0A9F46A999C47653013D3AD854352507 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B70A5D84B2BA32D988E762E85CCC5BA /* coding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coding.h; path = util/coding.h; sourceTree = "<group>"; };
+		105C555A9CCE8287E66483A4E55987CB /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
+		10C3661E975B2EB2411E0D8CEA86D592 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
+		11613B92FD78EB3E0E0FFB757611608B /* histogram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = histogram.h; path = util/histogram.h; sourceTree = "<group>"; };
+		11FF6477E327C353F89EC548411B88FE /* c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = c.h; path = include/leveldb/c.h; sourceTree = "<group>"; };
+		126B090679A222E08E02EECC15FAE602 /* write_batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch.h; path = include/leveldb/write_batch.h; sourceTree = "<group>"; };
+		136C6C6B0CE8B5950B4212EF1D76F8ED /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
+		1376DCE5C6BDC0170E0DC8FEC9A56EFB /* export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = export.h; path = include/leveldb/export.h; sourceTree = "<group>"; };
+		1A0DFC27A52594163DEDAFE07F535E20 /* testharness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testharness.h; path = util/testharness.h; sourceTree = "<group>"; };
+		1AB60C0D48FA6F7F04891E1D394A82D8 /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
+		1AD52F10A8561E0C0E21F54B7F3D4F57 /* log_format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_format.h; path = db/log_format.h; sourceTree = "<group>"; };
+		1C815EB57438C71F06E17CBE7E8E245D /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = util/hash.h; sourceTree = "<group>"; };
+		1D7B521F14B981CB447746506628C317 /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
+		1DCAEA12B4091AC157425952F1415919 /* dbformat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dbformat.h; path = db/dbformat.h; sourceTree = "<group>"; };
+		2059CA569D1A96892DB1C88E72F4384E /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
+		22C5A5AE9707AEADD2A2189434D5A6A5 /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
+		2300E4605D67E96F407FD1AD5E2F688D /* iterator_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator_wrapper.h; path = table/iterator_wrapper.h; sourceTree = "<group>"; };
+		23C7854C838237DA68C009D605247AFC /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
+		24F3173E0CBE56EB0136D653F9CF4912 /* arena.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arena.h; path = util/arena.h; sourceTree = "<group>"; };
+		2A0CE8C5D981B497D9A660647D8F64CB /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
+		32AE011B0F69FE2381F51F6A8427C901 /* block_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block_builder.h; path = table/block_builder.h; sourceTree = "<group>"; };
+		34B6C1D0DC0844987716F99F79B8D035 /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
+		36C6984B5E27387AF6B9238685664058 /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = include/leveldb/table.h; sourceTree = "<group>"; };
+		3BC62BE5857D1B4479F1373BCFD09AD8 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
+		3CA4A55FC88830E413DCE9183B3268CB /* leveldb-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "leveldb-library-dummy.m"; sourceTree = "<group>"; };
+		3CC145F7F9308E2915C6BE87184F5D5A /* Pods-SwiftLevelDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLevelDB.modulemap"; sourceTree = "<group>"; };
+		3D825425C21799E939618DE3AACCEAB9 /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
+		40309A8568CAE0C8B3133B4FF2FDA4EB /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
+		4141DA2D9E323B6CEE25278C39CC59DF /* block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block.h; path = table/block.h; sourceTree = "<group>"; };
+		44D4686D3CCBEE892A8001EBB62BF8B9 /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
+		4C45245800D050DF09FFA6286707DCDC /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = util/random.h; sourceTree = "<group>"; };
+		4FE19365EF9C611DFA1694CE9B290B7E /* leveldb-library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "leveldb-library-Info.plist"; sourceTree = "<group>"; };
+		500E82E26157E1A4F2F7B075B8A24220 /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
+		53505B783544105D75A30E14ED128AA0 /* version_edit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_edit.h; path = db/version_edit.h; sourceTree = "<group>"; };
+		54DD0A494A3354CD12E23BCA8F288EBC /* leveldb-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.release.xcconfig"; sourceTree = "<group>"; };
+		561A3C23FA9A9151FEC79DC110CF948C /* leveldb-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-umbrella.h"; sourceTree = "<group>"; };
+		590883F6D1CEFC84FD4C4DDEFA3E9F26 /* snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = db/snapshot.h; sourceTree = "<group>"; };
+		5AD93AAC5B9EFE07722CB7373060567E /* db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db.h; path = include/leveldb/db.h; sourceTree = "<group>"; };
+		64829A9C33051F80301F79C753C76001 /* comparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comparator.h; path = include/leveldb/comparator.h; sourceTree = "<group>"; };
+		659909B4F275D6C7E2DC0B5A53501CD0 /* Pods-SwiftLevelDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLevelDB-Info.plist"; sourceTree = "<group>"; };
+		6A8957E3C2DD74FEB7A5EA51FE934033 /* merger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = merger.h; path = table/merger.h; sourceTree = "<group>"; };
+		6BF7A5E6898044EF7B75A7427F77CE7F /* Pods-SwiftLevelDB-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLevelDB-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		746BDC088DB148D7A4A83A3A0A666B6C /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
+		754DFF8108A8A6895516B8F1ADEFB24F /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = util/logging.h; sourceTree = "<group>"; };
+		776D91E04E7377FE54A9D817025F8BEE /* table_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_cache.h; path = db/table_cache.h; sourceTree = "<group>"; };
+		79C16FAEC92DC078E84C3984DF399E3A /* slice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice.h; path = include/leveldb/slice.h; sourceTree = "<group>"; };
+		7A15EDF8FCB048BD13A22AFA7548C484 /* posix_logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = posix_logger.h; path = util/posix_logger.h; sourceTree = "<group>"; };
+		7B439F5F81766907637999A776511663 /* port_example.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_example.h; path = port/port_example.h; sourceTree = "<group>"; };
+		8154FDA44EC1198B13E5DEF740DEEA91 /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
+		819D92C839C6BF5A4BA2A0327BA2DDC0 /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
+		83827AC5CD2708D7151D812801677A2F /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
+		8473D3962B2B63A2F9C258F9DA555EF5 /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
+		8475DE1FECD587026B0930D7FFE97BA7 /* Pods-SwiftLevelDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLevelDB-umbrella.h"; sourceTree = "<group>"; };
+		84D235CA92A142169F6CF0207BB482C7 /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
+		86D9C4B09A525AE1895D96F5B18C9B74 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
+		8B7E1EF44823044F7CC2B387BBAAFD7B /* filter_block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_block.h; path = table/filter_block.h; sourceTree = "<group>"; };
+		8DD7FD8F4DD96831E74C418B306FB902 /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
+		8E92B3D35330140F0FA8971CC65A266E /* db_iter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_iter.h; path = db/db_iter.h; sourceTree = "<group>"; };
+		8EED18F7D2D500BAD7F4B8456416969E /* memtable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memtable.h; path = db/memtable.h; sourceTree = "<group>"; };
+		91DF2B5B7DD36E2457765EF2AEB34229 /* env_windows_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_windows_test_helper.h; path = util/env_windows_test_helper.h; sourceTree = "<group>"; };
+		91E495359FF74FDB98D0657C720F1535 /* Pods-SwiftLevelDB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftLevelDB"; path = Pods_SwiftLevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		927E696E639D43DB30162B51E9720BC9 /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
+		93C3E9682EA05B6BCA53562FAAF86F95 /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
+		958A48A1EC05946214EA5126D069F75F /* skiplist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = skiplist.h; path = db/skiplist.h; sourceTree = "<group>"; };
+		9A2554373D75A42B29054167EE99F3F5 /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
+		9B86A2C034BC814EDAAE6BEABC1397E9 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = table/format.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A057956C3DE2E3C4486414CD16F4D593 /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
+		A1208D9E1053A47B45EF57C8B78C97A8 /* port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port.h; path = port/port.h; sourceTree = "<group>"; };
+		A23D6BF813A05F1FFA01FA3E77859432 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
+		A4EE3FFFE83710B5161869ADC206DF58 /* Pods-SwiftLevelDB-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLevelDB-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A5A31472ADFF63C23A5A7A26C15DBF6E /* log_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_writer.h; path = db/log_writer.h; sourceTree = "<group>"; };
+		A5DC53695E2FC4D75D31A2FB3FFC4C1B /* leveldb-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "leveldb-library.modulemap"; sourceTree = "<group>"; };
+		A8330FE5312115DB9EF8B73D9BD2A3A8 /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
+		A879BC3CE00C5B1E97616C7CF415A16D /* write_batch_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch_internal.h; path = db/write_batch_internal.h; sourceTree = "<group>"; };
+		AC7DC32DBD2616F4DE5FF78B71E9E595 /* two_level_iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = two_level_iterator.h; path = table/two_level_iterator.h; sourceTree = "<group>"; };
+		AD2A862411A9734E1A7A2B3892E1B90B /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
+		AD778A261C58DD6BCB0BA122E282F3FB /* no_destructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = no_destructor.h; path = util/no_destructor.h; sourceTree = "<group>"; };
+		B4ECDC0B1EAA31253D99DDD5E0E5A0FD /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
+		B79EA47ACD40C8F752D14F133CDF13BA /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
+		B8AA9B7E9B2C8096D10632E86AEAC94D /* table_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_builder.h; path = include/leveldb/table_builder.h; sourceTree = "<group>"; };
+		B9A337F1686DE9E30187367F3BF6DDE0 /* mutexlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutexlock.h; path = util/mutexlock.h; sourceTree = "<group>"; };
+		CAB110B79E5937724931530BA951A1D7 /* Pods-SwiftLevelDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftLevelDB-dummy.m"; sourceTree = "<group>"; };
+		CBCEBF98CD4A41855C9A04AE6663B3E9 /* leveldb-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.debug.xcconfig"; sourceTree = "<group>"; };
+		D10938B0D26789C6C98BE96867E5B6A6 /* env_posix_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_posix_test_helper.h; path = util/env_posix_test_helper.h; sourceTree = "<group>"; };
+		D5E5D90BFD2CFD3311581A3FAEEA62B6 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
+		D8DEF75FBFD7874E4EC3CE925DD056D4 /* Pods-SwiftLevelDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLevelDB.release.xcconfig"; sourceTree = "<group>"; };
+		D9D514522346E9C6E1CF5B258B995D9F /* windows_logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = windows_logger.h; path = util/windows_logger.h; sourceTree = "<group>"; };
+		DAB20BF2A58EA75D6DA9036A93BEA7C8 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
+		DAD678C4D8CB1D71A7184F2A98EFDBDB /* log_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_reader.h; path = db/log_reader.h; sourceTree = "<group>"; };
+		DBDF10D5FEFA7D1150D7123F2D4B3665 /* testutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testutil.h; path = util/testutil.h; sourceTree = "<group>"; };
+		DC183833646E75916FCAF209BD02A3D3 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
+		DCF19798A2F221C3FD869E4BB934B478 /* db_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_impl.h; path = db/db_impl.h; sourceTree = "<group>"; };
+		DE447C8958D4173E6D7DFC53BB712C16 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
+		E01A90D76F1441ED869209248AF55A4A /* version_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_set.h; path = db/version_set.h; sourceTree = "<group>"; };
+		E0A5800B4BF2152549C48268EE953C45 /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
+		E3B3D55B55CB3E14A05C008310F69D09 /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
+		E4F3262F3A2EFDAFCB42F3228E3421F1 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
+		E549096BED9C288C10EC7AC2E3CCA991 /* builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = builder.h; path = db/builder.h; sourceTree = "<group>"; };
+		E8E2F309C8BEBED8B684A8ACFC6C18BA /* filename.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filename.h; path = db/filename.h; sourceTree = "<group>"; };
+		E8F303D835270D0C136E18EBE8CA67DF /* Pods-SwiftLevelDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLevelDB.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0FCEAFB40BB3E9ADBE7E2E291CCB3E /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
+		EFCEFD3BA18C39BE84BA2364E82B7F72 /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
+		F27E896EA082759E1ECBECD10F935525 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = options.h; path = include/leveldb/options.h; sourceTree = "<group>"; };
+		F6C906318CF1265CD7BF376031435C78 /* dumpfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dumpfile.h; path = include/leveldb/dumpfile.h; sourceTree = "<group>"; };
+		F843899AD334551A3016A4F1A623E373 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
+		FE66CC9C900CDE41E9D40C324D7C3640 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
+		FFE72C80982D275508DD34446BDBB261 /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		221FB3A5DA717834CE78AD0011086D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F471295D9EFE5BABD7125E1C169B12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E0CB35F87BB97AA50A1E3DB838B23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3661FB5135B1E5DEB2DC958DC68D2F72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E53154C670DF4EC66CCDFD4C904A90D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5DC53695E2FC4D75D31A2FB3FFC4C1B /* leveldb-library.modulemap */,
+				3CA4A55FC88830E413DCE9183B3268CB /* leveldb-library-dummy.m */,
+				4FE19365EF9C611DFA1694CE9B290B7E /* leveldb-library-Info.plist */,
+				EFCEFD3BA18C39BE84BA2364E82B7F72 /* leveldb-library-prefix.pch */,
+				561A3C23FA9A9151FEC79DC110CF948C /* leveldb-library-umbrella.h */,
+				CBCEBF98CD4A41855C9A04AE6663B3E9 /* leveldb-library.debug.xcconfig */,
+				54DD0A494A3354CD12E23BCA8F288EBC /* leveldb-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/leveldb-library";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		609DCD3A771EFEA84805A90EF99B515C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E76FF166FE40BBE58CBE97F89B05C82B /* Pods-SwiftLevelDB */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		69361850F276F1A751C95AD16346C6D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				932C8C62C2A2680F341997516A3F3B6C /* leveldb-library */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		932C8C62C2A2680F341997516A3F3B6C /* leveldb-library */ = {
+			isa = PBXGroup;
+			children = (
+				23C7854C838237DA68C009D605247AFC /* arena.cc */,
+				24F3173E0CBE56EB0136D653F9CF4912 /* arena.h */,
+				DE447C8958D4173E6D7DFC53BB712C16 /* block.cc */,
+				4141DA2D9E323B6CEE25278C39CC59DF /* block.h */,
+				D5E5D90BFD2CFD3311581A3FAEEA62B6 /* block_builder.cc */,
+				32AE011B0F69FE2381F51F6A8427C901 /* block_builder.h */,
+				1AB60C0D48FA6F7F04891E1D394A82D8 /* bloom.cc */,
+				927E696E639D43DB30162B51E9720BC9 /* builder.cc */,
+				E549096BED9C288C10EC7AC2E3CCA991 /* builder.h */,
+				EC0FCEAFB40BB3E9ADBE7E2E291CCB3E /* c.cc */,
+				11FF6477E327C353F89EC548411B88FE /* c.h */,
+				84D235CA92A142169F6CF0207BB482C7 /* cache.cc */,
+				FFE72C80982D275508DD34446BDBB261 /* cache.h */,
+				2A0CE8C5D981B497D9A660647D8F64CB /* coding.cc */,
+				0B70A5D84B2BA32D988E762E85CCC5BA /* coding.h */,
+				44D4686D3CCBEE892A8001EBB62BF8B9 /* comparator.cc */,
+				64829A9C33051F80301F79C753C76001 /* comparator.h */,
+				93C3E9682EA05B6BCA53562FAAF86F95 /* crc32c.cc */,
+				9A2554373D75A42B29054167EE99F3F5 /* crc32c.h */,
+				5AD93AAC5B9EFE07722CB7373060567E /* db.h */,
+				8DD7FD8F4DD96831E74C418B306FB902 /* db_impl.cc */,
+				DCF19798A2F221C3FD869E4BB934B478 /* db_impl.h */,
+				105C555A9CCE8287E66483A4E55987CB /* db_iter.cc */,
+				8E92B3D35330140F0FA8971CC65A266E /* db_iter.h */,
+				1D7B521F14B981CB447746506628C317 /* dbformat.cc */,
+				1DCAEA12B4091AC157425952F1415919 /* dbformat.h */,
+				E3B3D55B55CB3E14A05C008310F69D09 /* dumpfile.cc */,
+				F6C906318CF1265CD7BF376031435C78 /* dumpfile.h */,
+				136C6C6B0CE8B5950B4212EF1D76F8ED /* env.cc */,
+				DAB20BF2A58EA75D6DA9036A93BEA7C8 /* env.h */,
+				8473D3962B2B63A2F9C258F9DA555EF5 /* env_posix.cc */,
+				D10938B0D26789C6C98BE96867E5B6A6 /* env_posix_test_helper.h */,
+				91DF2B5B7DD36E2457765EF2AEB34229 /* env_windows_test_helper.h */,
+				1376DCE5C6BDC0170E0DC8FEC9A56EFB /* export.h */,
+				AD2A862411A9734E1A7A2B3892E1B90B /* filename.cc */,
+				E8E2F309C8BEBED8B684A8ACFC6C18BA /* filename.h */,
+				746BDC088DB148D7A4A83A3A0A666B6C /* filter_block.cc */,
+				8B7E1EF44823044F7CC2B387BBAAFD7B /* filter_block.h */,
+				500E82E26157E1A4F2F7B075B8A24220 /* filter_policy.cc */,
+				0556C7838A01FD466E2E865E9E434106 /* filter_policy.h */,
+				A057956C3DE2E3C4486414CD16F4D593 /* format.cc */,
+				9B86A2C034BC814EDAAE6BEABC1397E9 /* format.h */,
+				A23D6BF813A05F1FFA01FA3E77859432 /* hash.cc */,
+				1C815EB57438C71F06E17CBE7E8E245D /* hash.h */,
+				E4F3262F3A2EFDAFCB42F3228E3421F1 /* histogram.cc */,
+				11613B92FD78EB3E0E0FFB757611608B /* histogram.h */,
+				22C5A5AE9707AEADD2A2189434D5A6A5 /* iterator.cc */,
+				DC183833646E75916FCAF209BD02A3D3 /* iterator.h */,
+				2300E4605D67E96F407FD1AD5E2F688D /* iterator_wrapper.h */,
+				1AD52F10A8561E0C0E21F54B7F3D4F57 /* log_format.h */,
+				B79EA47ACD40C8F752D14F133CDF13BA /* log_reader.cc */,
+				DAD678C4D8CB1D71A7184F2A98EFDBDB /* log_reader.h */,
+				86D9C4B09A525AE1895D96F5B18C9B74 /* log_writer.cc */,
+				A5A31472ADFF63C23A5A7A26C15DBF6E /* log_writer.h */,
+				10C3661E975B2EB2411E0D8CEA86D592 /* logging.cc */,
+				754DFF8108A8A6895516B8F1ADEFB24F /* logging.h */,
+				819D92C839C6BF5A4BA2A0327BA2DDC0 /* memtable.cc */,
+				8EED18F7D2D500BAD7F4B8456416969E /* memtable.h */,
+				E0A5800B4BF2152549C48268EE953C45 /* merger.cc */,
+				6A8957E3C2DD74FEB7A5EA51FE934033 /* merger.h */,
+				B9A337F1686DE9E30187367F3BF6DDE0 /* mutexlock.h */,
+				AD778A261C58DD6BCB0BA122E282F3FB /* no_destructor.h */,
+				40309A8568CAE0C8B3133B4FF2FDA4EB /* options.cc */,
+				F27E896EA082759E1ECBECD10F935525 /* options.h */,
+				A1208D9E1053A47B45EF57C8B78C97A8 /* port.h */,
+				7B439F5F81766907637999A776511663 /* port_example.h */,
+				007649A893C3A14EF66CBDCE0C6710D7 /* port_stdcxx.h */,
+				7A15EDF8FCB048BD13A22AFA7548C484 /* posix_logger.h */,
+				4C45245800D050DF09FFA6286707DCDC /* random.h */,
+				8154FDA44EC1198B13E5DEF740DEEA91 /* repair.cc */,
+				958A48A1EC05946214EA5126D069F75F /* skiplist.h */,
+				79C16FAEC92DC078E84C3984DF399E3A /* slice.h */,
+				590883F6D1CEFC84FD4C4DDEFA3E9F26 /* snapshot.h */,
+				34B6C1D0DC0844987716F99F79B8D035 /* status.cc */,
+				2059CA569D1A96892DB1C88E72F4384E /* status.h */,
+				B4ECDC0B1EAA31253D99DDD5E0E5A0FD /* table.cc */,
+				36C6984B5E27387AF6B9238685664058 /* table.h */,
+				3BC62BE5857D1B4479F1373BCFD09AD8 /* table_builder.cc */,
+				B8AA9B7E9B2C8096D10632E86AEAC94D /* table_builder.h */,
+				A8330FE5312115DB9EF8B73D9BD2A3A8 /* table_cache.cc */,
+				776D91E04E7377FE54A9D817025F8BEE /* table_cache.h */,
+				3D825425C21799E939618DE3AACCEAB9 /* testharness.cc */,
+				1A0DFC27A52594163DEDAFE07F535E20 /* testharness.h */,
+				DBDF10D5FEFA7D1150D7123F2D4B3665 /* testutil.h */,
+				01C837E2B80E997A1EF30EA263CAD037 /* thread_annotations.h */,
+				83827AC5CD2708D7151D812801677A2F /* two_level_iterator.cc */,
+				AC7DC32DBD2616F4DE5FF78B71E9E595 /* two_level_iterator.h */,
+				00971B5E5C73590BA734BDD7953B906C /* version_edit.cc */,
+				53505B783544105D75A30E14ED128AA0 /* version_edit.h */,
+				F843899AD334551A3016A4F1A623E373 /* version_set.cc */,
+				E01A90D76F1441ED869209248AF55A4A /* version_set.h */,
+				D9D514522346E9C6E1CF5B258B995D9F /* windows_logger.h */,
+				FE66CC9C900CDE41E9D40C324D7C3640 /* write_batch.cc */,
+				126B090679A222E08E02EECC15FAE602 /* write_batch.h */,
+				A879BC3CE00C5B1E97616C7CF415A16D /* write_batch_internal.h */,
+				0E53154C670DF4EC66CCDFD4C904A90D /* Support Files */,
+			);
+			path = "leveldb-library";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				69361850F276F1A751C95AD16346C6D1 /* Pods */,
+				FC5FF51519B045458CE66EE493324D16 /* Products */,
+				609DCD3A771EFEA84805A90EF99B515C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76FF166FE40BBE58CBE97F89B05C82B /* Pods-SwiftLevelDB */ = {
+			isa = PBXGroup;
+			children = (
+				3CC145F7F9308E2915C6BE87184F5D5A /* Pods-SwiftLevelDB.modulemap */,
+				A4EE3FFFE83710B5161869ADC206DF58 /* Pods-SwiftLevelDB-acknowledgements.markdown */,
+				010EA1D4332BF6022453567193E255B3 /* Pods-SwiftLevelDB-acknowledgements.plist */,
+				CAB110B79E5937724931530BA951A1D7 /* Pods-SwiftLevelDB-dummy.m */,
+				6BF7A5E6898044EF7B75A7427F77CE7F /* Pods-SwiftLevelDB-frameworks.sh */,
+				659909B4F275D6C7E2DC0B5A53501CD0 /* Pods-SwiftLevelDB-Info.plist */,
+				8475DE1FECD587026B0930D7FFE97BA7 /* Pods-SwiftLevelDB-umbrella.h */,
+				E8F303D835270D0C136E18EBE8CA67DF /* Pods-SwiftLevelDB.debug.xcconfig */,
+				D8DEF75FBFD7874E4EC3CE925DD056D4 /* Pods-SwiftLevelDB.release.xcconfig */,
+			);
+			name = "Pods-SwiftLevelDB";
+			path = "Target Support Files/Pods-SwiftLevelDB";
+			sourceTree = "<group>";
+		};
+		FC5FF51519B045458CE66EE493324D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F46A999C47653013D3AD854352507 /* leveldb.framework */,
+				91E495359FF74FDB98D0657C720F1535 /* Pods-SwiftLevelDB */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A2E3CE0BE4126DBA55C334F54717355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C70D326BF7987D8EEE73296BF8D33B /* Pods-SwiftLevelDB-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FE09D35599DC129208F7ED30FBEF63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8D9A6E88E7A5FDD700AF495012F068 /* arena.h in Headers */,
+				A5851DE95732DDBDCE82E03B4DDCB760 /* block.h in Headers */,
+				B71F22350F6D831B0E4D9A7CC25D2F60 /* block_builder.h in Headers */,
+				6E9CCC3DB6E1F66C871F33076BCA67D5 /* builder.h in Headers */,
+				31760C442FD20C53B130C752384D251D /* c.h in Headers */,
+				613B5EC4D56CFBD12EF38B0233324273 /* cache.h in Headers */,
+				BF8A795B6BA25405938C1A8AB8725905 /* coding.h in Headers */,
+				4430A593149131265CE11C2E50466854 /* comparator.h in Headers */,
+				971A40EEF4B6DA046AAE9B1AC89F1B77 /* crc32c.h in Headers */,
+				457BE871AB4AEC313DA165413C887121 /* db.h in Headers */,
+				611CDCE7CC0AA1C10F5BDFDBCE1FE188 /* db_impl.h in Headers */,
+				FA889A6A88FFE1C18DEA0B83A97314A5 /* db_iter.h in Headers */,
+				50B262FA91C6AD9F44272C6127747310 /* dbformat.h in Headers */,
+				C6E02D01294FA360CBBF07C65E09E31E /* dumpfile.h in Headers */,
+				C318B91F752B36CEB54C29D77BF0DD78 /* env.h in Headers */,
+				124693AB694E4857540D9E248D1C4AF3 /* env_posix_test_helper.h in Headers */,
+				C444671DE961EECAF94D385A2E258797 /* env_windows_test_helper.h in Headers */,
+				3F42BA66B606B7E1B2EF90CC1EA99CC8 /* export.h in Headers */,
+				667491E66068756423C3540DF8FC64A1 /* filename.h in Headers */,
+				6DD7E60E098A42B58B0275FF22801928 /* filter_block.h in Headers */,
+				AD02054E3A4E04984D2E6A3CEA6E9B35 /* filter_policy.h in Headers */,
+				4529B6839A510BB3C26BA213DA47DD6A /* format.h in Headers */,
+				A3CAC9007DA68A2421DB1C6E4CFEE40E /* hash.h in Headers */,
+				BD4C17923FCCE915A5AC6B2E36A27693 /* histogram.h in Headers */,
+				F89BCD1E281B36A72110B7C5CD9C7B90 /* iterator.h in Headers */,
+				DE42FA1EDD5504837AC2B4FC517B62CF /* iterator_wrapper.h in Headers */,
+				12B74F90BDF222AA33AAC31D743DBFF5 /* leveldb-library-umbrella.h in Headers */,
+				CF3699CF1EA8610CAE3D5E086F8618FB /* log_format.h in Headers */,
+				B6F0224507A0089B4FFE7446582DD785 /* log_reader.h in Headers */,
+				25BD344E97C9818225666669D265AE4C /* log_writer.h in Headers */,
+				373B8605F25BF068D1B868A10F10DF7F /* logging.h in Headers */,
+				24D3C63B6101E0DB74306CCB812E654D /* memtable.h in Headers */,
+				F44BB80FA2396806D21736E0D903E055 /* merger.h in Headers */,
+				4994E688D2DEDCB87C123753E428EEA3 /* mutexlock.h in Headers */,
+				DC37D273A423EDC5C4E26EAF59586199 /* no_destructor.h in Headers */,
+				859A4EE25CFB9E2929665E84207B8476 /* options.h in Headers */,
+				7214C028C0C248A39B521E42B1CA0D9F /* port.h in Headers */,
+				2A2AFD034433BD2A35B92A1767CA3A92 /* port_example.h in Headers */,
+				19EC6E8CA8B87430D03F1D364F21227C /* port_stdcxx.h in Headers */,
+				768DA46B21BBD131F26542220DB415D0 /* posix_logger.h in Headers */,
+				FD7EF74891BECB13D83E59D6ADB70D79 /* random.h in Headers */,
+				D1DA50414F74358EC85AEE587B4DA153 /* skiplist.h in Headers */,
+				CC127C3950CBD05AD6406EC4C9D639C0 /* slice.h in Headers */,
+				4CAEB74269772F58F8EB7C0CBF3DE190 /* snapshot.h in Headers */,
+				A0AE94E6EC32DA608431C010E4681791 /* status.h in Headers */,
+				1E6A4A4E614F2684DA7CCE66035CEBE2 /* table.h in Headers */,
+				F339237A7F3E7C38161F92E200FF80DB /* table_builder.h in Headers */,
+				DD5DA094509F9208B6BAE5293F22B06D /* table_cache.h in Headers */,
+				63EA906EF6DCE9F404EA6E362A8BAD35 /* testharness.h in Headers */,
+				EA4CBAA22F39B5134C6AE06B5A88C4EC /* testutil.h in Headers */,
+				F855BA53066AE0FC6246833639D45E53 /* thread_annotations.h in Headers */,
+				364321DB224FCB2571CE1D513BD7F4D9 /* two_level_iterator.h in Headers */,
+				B08B030FB81169BDD65D6391E0113C84 /* version_edit.h in Headers */,
+				683A3F2664AE0B6C5D5DA8F1BAABAC49 /* version_set.h in Headers */,
+				EDB6B354326FEE49345E36355A866994 /* windows_logger.h in Headers */,
+				885CB3DBE0C18C546B73E255EE298867 /* write_batch.h in Headers */,
+				A3C9A9C6B8220B7F5BAC06A19AC87E71 /* write_batch_internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9307B7A119490930CF70393AB529AAC1 /* leveldb-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C25192329D63912967C9B9EA0B1E27 /* Build configuration list for PBXNativeTarget "leveldb-library" */;
+			buildPhases = (
+				C5FE09D35599DC129208F7ED30FBEF63 /* Headers */,
+				C66092100F3339C26FF755656F9EE25A /* Sources */,
+				88E0CB35F87BB97AA50A1E3DB838B23B /* Frameworks */,
+				16B860AB0C1A2FA63D24151D5A99E48A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "leveldb-library";
+			productName = leveldb;
+			productReference = 0A9F46A999C47653013D3AD854352507 /* leveldb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC65EDA26DAAF419A64F801493A4A7CF /* Pods-SwiftLevelDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB231C71764108A0E886D095120EE607 /* Build configuration list for PBXNativeTarget "Pods-SwiftLevelDB" */;
+			buildPhases = (
+				5A2E3CE0BE4126DBA55C334F54717355 /* Headers */,
+				795042F5539700A82E76722CB152484F /* Sources */,
+				221FB3A5DA717834CE78AD0011086D24 /* Frameworks */,
+				D994929E838A1B3F65CBC1357BD962A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC6EE19A190269F41B01560CF05B7E55 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftLevelDB";
+			productName = Pods_SwiftLevelDB;
+			productReference = 91E495359FF74FDB98D0657C720F1535 /* Pods-SwiftLevelDB */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FC5FF51519B045458CE66EE493324D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9307B7A119490930CF70393AB529AAC1 /* leveldb-library */,
+				FC65EDA26DAAF419A64F801493A4A7CF /* Pods-SwiftLevelDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16B860AB0C1A2FA63D24151D5A99E48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D994929E838A1B3F65CBC1357BD962A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		795042F5539700A82E76722CB152484F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B2F904989674EEDEE898EC453D7CF6 /* Pods-SwiftLevelDB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66092100F3339C26FF755656F9EE25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE4700C6D71370E22A6DB403FDE457F /* arena.cc in Sources */,
+				34DBFA190108871ECACB34F537BF8B68 /* block.cc in Sources */,
+				B39B6B84524F668202ED7BECEB1CC2B4 /* block_builder.cc in Sources */,
+				6174B71B3BEF70F4843C806F819BE485 /* bloom.cc in Sources */,
+				65FF1F1E5408C9FF4343E7512E4FFA96 /* builder.cc in Sources */,
+				FC46C7EA0C86A10078BDCBC89CA99748 /* c.cc in Sources */,
+				5572209F6FC8DF50059FF02840C2DB14 /* cache.cc in Sources */,
+				107B86B05DE32BFFAFC1268B97482C7C /* coding.cc in Sources */,
+				33912503AEC797E163DB60766FC69A12 /* comparator.cc in Sources */,
+				30C3284F072F0D2C2B1CF72C52E7CA36 /* crc32c.cc in Sources */,
+				D750782F6872805919DAD942963BA59D /* db_impl.cc in Sources */,
+				F72FFAF15E01A9D8C141441856D43BCA /* db_iter.cc in Sources */,
+				05E12FF73E6AF3C3A04B81E2F9DBFAB4 /* dbformat.cc in Sources */,
+				8334E6A626280CE9B25CC9A28FFA4BBA /* dumpfile.cc in Sources */,
+				00F24289408806CFC1053EAF86FC8AE7 /* env.cc in Sources */,
+				4AF1327477D18D25A94325CF530983CB /* env_posix.cc in Sources */,
+				B2BE19CB47F04F57DA0EBF4B789608BC /* filename.cc in Sources */,
+				5E4D723D35861DAAD1192043EA7E6973 /* filter_block.cc in Sources */,
+				961D2A628A540DCF374ED832BC79B064 /* filter_policy.cc in Sources */,
+				56A793B3AD3E6C9AC94E9508A18F6C01 /* format.cc in Sources */,
+				DB6B8CB119FA547C63CE00A0ADD97D4E /* hash.cc in Sources */,
+				3737F9816E7A58B80552C78A3002C899 /* histogram.cc in Sources */,
+				2A44B628B1369A83A6990987B6F3FBD4 /* iterator.cc in Sources */,
+				06E2ADD811A76863878A26932E4A8EC7 /* leveldb-library-dummy.m in Sources */,
+				3A3526856AE7201FFE31F72AE0401E93 /* log_reader.cc in Sources */,
+				83FDD26BEF6619D3FF00A886039064D0 /* log_writer.cc in Sources */,
+				626B9B8B8A4FE5F2DA828DE32BDBFC5A /* logging.cc in Sources */,
+				98B838850574A279EB1F3ECC81319B7B /* memtable.cc in Sources */,
+				EFEF97B2237DFA0ED431C1E858B12486 /* merger.cc in Sources */,
+				33A7C77CF9C2F76C6A177D9AC0285A7E /* options.cc in Sources */,
+				9D06AE16049BBBEAEFA444D845EAAFB9 /* repair.cc in Sources */,
+				4BE58681F5427154573A32970ACA8FF1 /* status.cc in Sources */,
+				7F5043C66606A957135D4A8A019A67EC /* table.cc in Sources */,
+				237E56CB7EF1D354B62B691B2E74EFCB /* table_builder.cc in Sources */,
+				BF1E13750C078C86DBF7A0EE03031B1C /* table_cache.cc in Sources */,
+				B6A462AFD1921315FF4B939562435E9F /* testharness.cc in Sources */,
+				ACFD1BCB733B8115502B96B61E964E23 /* two_level_iterator.cc in Sources */,
+				13040DCDA8D0CAB096A083BC00342ADB /* version_edit.cc in Sources */,
+				C6F6B3BF8B1FF10A5C7DECE10BF5C838 /* version_set.cc in Sources */,
+				7DFFCD5832B1FC7C8D8012D9F9B065B7 /* write_batch.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC6EE19A190269F41B01560CF05B7E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "leveldb-library";
+			target = 9307B7A119490930CF70393AB529AAC1 /* leveldb-library */;
+			targetProxy = DE4F58CC09772C198565E1033C658187 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D4F754E87066E03AA22A89B1C983D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCEBF98CD4A41855C9A04AE6663B3E9 /* leveldb-library.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/leveldb-library/leveldb-library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/leveldb-library/leveldb-library-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/leveldb-library/leveldb-library.modulemap";
+				PRODUCT_MODULE_NAME = leveldb;
+				PRODUCT_NAME = leveldb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9804DB7EB5E26ACE8326C88E42C7D972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DD0A494A3354CD12E23BCA8F288EBC /* leveldb-library.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/leveldb-library/leveldb-library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/leveldb-library/leveldb-library-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/leveldb-library/leveldb-library.modulemap";
+				PRODUCT_MODULE_NAME = leveldb;
+				PRODUCT_NAME = leveldb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B1838FCD8C644B4A98B6645AD6FE142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8DEF75FBFD7874E4EC3CE925DD056D4 /* Pods-SwiftLevelDB.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLevelDB/Pods-SwiftLevelDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLevelDB/Pods-SwiftLevelDB.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A20C454379F09A58E91CDD04A7605A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F303D835270D0C136E18EBE8CA67DF /* Pods-SwiftLevelDB.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLevelDB/Pods-SwiftLevelDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLevelDB/Pods-SwiftLevelDB.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C25192329D63912967C9B9EA0B1E27 /* Build configuration list for PBXNativeTarget "leveldb-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4F754E87066E03AA22A89B1C983D8B /* Debug */,
+				9804DB7EB5E26ACE8326C88E42C7D972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB231C71764108A0E886D095120EE607 /* Build configuration list for PBXNativeTarget "Pods-SwiftLevelDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20C454379F09A58E91CDD04A7605A6D /* Debug */,
+				9B1838FCD8C644B4A98B6645AD6FE142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
